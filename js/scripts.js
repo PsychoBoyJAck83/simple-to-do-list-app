@@ -22,7 +22,7 @@ function newItem(){
       li.toggleClass('strike');
    }
 
-   //Eventhandler for when double-clicking on a list item
+   //Event handler for when double-clicking on a list item
    li.on('dblclick',crossOut);
 
    //Creating a cross out button
@@ -41,5 +41,7 @@ function newItem(){
    
    //Event handler for cross out button
    crossOutButton.on('click',deleteListItem);
+
+   $('#list').sortable();
 
    }
